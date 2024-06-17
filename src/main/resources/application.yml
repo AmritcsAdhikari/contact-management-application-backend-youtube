@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: contact-api
+
+  # database config (mongodb)
+  data:
+    mongodb:
+      uri:  mongodb+srv://root-user:root@my-cluster-one.rztoh3d.mongodb.net/
+      database: contact-test
+      auto-index-creation: true
+
+# swagger-documentation config
+springdoc:
+  api-docs:
+    path: /api-docs     # default : http://localhost:8080/v3/api-docs            # now : http://localhost:8080/api-docs  for json and  http://localhost:8080/api-docs.yaml for yaml doc
+  swagger-ui:
+    path: /doc/index.html   # default : http://localhost:8080/swagger-ui/index.html    # now: http://localhost:8080/doc/index.html
+    enabled: true           # Whether to generate and serve an OpenAPI document
+
+# application server PORT
+server:
+  port: 8080
+
+
